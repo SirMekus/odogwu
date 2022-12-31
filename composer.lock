@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8255b21b5c715aeca813c41e12582f01",
+    "content-hash": "3fc8f04f76fb7a81fc6645d8fc05107e",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -499,17 +499,57 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "sirmekus/zam",
-            "version": "1.8.0",
+            "name": "sirmekus/ahia",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/SirMekus/zam.git",
-                "reference": "980c8c2aa272d517ec09d7114c6546e646fb790b"
+                "url": "https://github.com/SirMekus/ahia.git",
+                "reference": "4e7f214e878049ca916e5a6aa4f2db0d53c43e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SirMekus/zam/zipball/980c8c2aa272d517ec09d7114c6546e646fb790b",
-                "reference": "980c8c2aa272d517ec09d7114c6546e646fb790b",
+                "url": "https://api.github.com/repos/SirMekus/ahia/zipball/4e7f214e878049ca916e5a6aa4f2db0d53c43e4c",
+                "reference": "4e7f214e878049ca916e5a6aa4f2db0d53c43e4c",
+                "shasum": ""
+            },
+            "require": {
+                "sirmekus/zam": ">=2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sirmekus\\Database\\": "src/database"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sirmekus",
+                    "email": "mekus600@gmail.com"
+                }
+            ],
+            "description": "OOP way for database CRUD operations",
+            "support": {
+                "issues": "https://github.com/SirMekus/ahia/issues",
+                "source": "https://github.com/SirMekus/ahia/tree/1.0.2"
+            },
+            "time": "2022-12-31T14:55:29+00:00"
+        },
+        {
+            "name": "sirmekus/zam",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SirMekus/zam.git",
+                "reference": "47bcd60daee2a797b01d40bbc53517f760369f87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SirMekus/zam/zipball/47bcd60daee2a797b01d40bbc53517f760369f87",
+                "reference": "47bcd60daee2a797b01d40bbc53517f760369f87",
                 "shasum": ""
             },
             "require": {
@@ -522,8 +562,7 @@
                     "src/helpers.php"
                 ],
                 "psr-4": {
-                    "Sirmekus\\App\\": "src/utility",
-                    "Sirmekus\\Database\\": "src/database"
+                    "Sirmekus\\App\\": "src/utility"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -536,12 +575,12 @@
                     "email": "mekus600@gmail.com"
                 }
             ],
-            "description": "A PHP package for handling client requests, sending response, database CRUD operations, among others, easily",
+            "description": "A PHP package for handling client requests, sending response, among others, easily",
             "support": {
                 "issues": "https://github.com/SirMekus/zam/issues",
-                "source": "https://github.com/SirMekus/zam/tree/1.8.0"
+                "source": "https://github.com/SirMekus/zam/tree/2.0.0"
             },
-            "time": "2022-12-31T03:50:10+00:00"
+            "time": "2022-12-31T14:09:21+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

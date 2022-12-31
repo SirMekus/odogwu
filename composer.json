@@ -1,13 +1,12 @@
 {
     "require": {
-        "sirmekus/zam": "^1.8",
         "intervention/image": "^2.7",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "sirmekus/ahia": "^1.0"
     },
     "autoload": {
         "files": [
-            "app/helpers.php",
-            "env.php"
+            "app/helpers.php"
            ],
         "psr-4": {
             "App\\": "app/"

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playground</title>
+    <link rel="stylesheet" href="http://localhost/playground/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="d-flex preview-upload">
+                    <!-- The selected photo will be displayed here. This is always very important-->
+                </div>
+
+                <h1>Playground</h1>
+
+                <a href="claim-offer.php" class="btn btn-lg pre-run btn-info">Click Me</a>
+
+                <form data-bc="myevent" action="http://localhost/playground/app/claim-offer.php" class="form"
+                    method="post">
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control borderless-input" name="name" />
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input type="email" class="form-control borderless-input" name="email" />
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input type="tel" class="form-control borderless-input" name="tel" />
+                    </div>
+
+                    <input type="file" class="image" name="image" id="image" data-preview="preview-upload" />
+
+                    <div class="form-group mt-3">
+                        <div>
+                            <div>
+                                <input class="btn btn-primary btn-lg w-100" type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <a href="/form.html" class="btn btn-info btn-lg open-as-modal">
+                    Open Modal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://localhost/playground/node_modules/mmuo/dist/mmuo.umd.js"></script>
+    <script src="http://localhost/playground/node_modules/axios/dist/axios.js"></script>
+    <script src="http://localhost/playground/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        window.mmuo_acceptedDocs = ["image/jpeg", "image/png", "image/gif", "image/webp", "audio/mpeg"]
+
+        window.addEventListener("DOMContentLoaded", function () {
+            mmuo.registerEventListeners()
+
+            document.addEventListener("myevent", (event) => {
+                console.log("I'm listening on a custom event");
+                console.log(event);
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>

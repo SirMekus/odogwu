@@ -2,7 +2,8 @@
     "require": {
         "intervention/image": "^2.7",
         "vlucas/phpdotenv": "^5.5",
-        "sirmekus/ahia": "^1.0"
+        "sirmekus/ahia": "^1.0",
+        "sirmekus/igwe": "^1.2"
     },
     "autoload": {
         "files": [
